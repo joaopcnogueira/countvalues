@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "countvalues",
+    "section": "",
+    "text": "pip install countvalues"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "countvalues",
+    "section": "How to use",
+    "text": "How to use\n\nimport pandas as pd\nfrom countvalues.core import count_values\n\n\ndf = pd.read_csv('../data/titanic.csv')\ndf.head()\n\n\n\n\n\n  \n    \n      \n      PassengerId\n      Survived\n      Pclass\n      Name\n      Sex\n      Age\n      SibSp\n      Parch\n      Ticket\n      Fare\n      Cabin\n      Embarked\n    \n  \n  \n    \n      0\n      1\n      0\n      3\n      Braund, Mr. Owen Harris\n      male\n      22.0\n      1\n      0\n      A/5 21171\n      7.2500\n      NaN\n      S\n    \n    \n      1\n      2\n      1\n      1\n      Cumings, Mrs. John Bradley (Florence Briggs Th...\n      female\n      38.0\n      1\n      0\n      PC 17599\n      71.2833\n      C85\n      C\n    \n    \n      2\n      3\n      1\n      3\n      Heikkinen, Miss. Laina\n      female\n      26.0\n      0\n      0\n      STON/O2. 3101282\n      7.9250\n      NaN\n      S\n    \n    \n      3\n      4\n      1\n      1\n      Futrelle, Mrs. Jacques Heath (Lily May Peel)\n      female\n      35.0\n      1\n      0\n      113803\n      53.1000\n      C123\n      S\n    \n    \n      4\n      5\n      0\n      3\n      Allen, Mr. William Henry\n      male\n      35.0\n      0\n      0\n      373450\n      8.0500\n      NaN\n      S\n    \n  \n\n\n\n\n\ncount_values(df, 'Sex')\n\n\n\n\n\n  \n    \n      \n      Sex\n      count\n      percentual\n      cumulative_percentual\n    \n  \n  \n    \n      0\n      female\n      314\n      0.352413\n      0.352413\n    \n    \n      1\n      male\n      577\n      0.647587\n      1.000000"
+  },
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "core",
+    "section": "",
+    "text": "source\n\ncount_values\n\n count_values (df:pandas.core.frame.DataFrame, col:str, order:bool=True)\n\nCount the number of values in a column and return a dataframe with the results.\n\n\n\n\nType\nDefault\nDetails\n\n\n\n\ndf\nDataFrame\n\nA pandas dataframe\n\n\ncol\nstr\n\nA column name\n\n\norder\nbool\nTrue\nOrder the results by count\n\n\nReturns\nDataFrame\n\n\n\n\n\nFirst of all, import you dataset\n\ndf = pd.read_csv('../data/titanic.csv')\ndf.head()\n\n\n\n\n\n  \n    \n      \n      PassengerId\n      Survived\n      Pclass\n      Name\n      Sex\n      Age\n      SibSp\n      Parch\n      Ticket\n      Fare\n      Cabin\n      Embarked\n    \n  \n  \n    \n      0\n      1\n      0\n      3\n      Braund, Mr. Owen Harris\n      male\n      22.0\n      1\n      0\n      A/5 21171\n      7.2500\n      NaN\n      S\n    \n    \n      1\n      2\n      1\n      1\n      Cumings, Mrs. John Bradley (Florence Briggs Th...\n      female\n      38.0\n      1\n      0\n      PC 17599\n      71.2833\n      C85\n      C\n    \n    \n      2\n      3\n      1\n      3\n      Heikkinen, Miss. Laina\n      female\n      26.0\n      0\n      0\n      STON/O2. 3101282\n      7.9250\n      NaN\n      S\n    \n    \n      3\n      4\n      1\n      1\n      Futrelle, Mrs. Jacques Heath (Lily May Peel)\n      female\n      35.0\n      1\n      0\n      113803\n      53.1000\n      C123\n      S\n    \n    \n      4\n      5\n      0\n      3\n      Allen, Mr. William Henry\n      male\n      35.0\n      0\n      0\n      373450\n      8.0500\n      NaN\n      S\n    \n  \n\n\n\n\nthen you can use the count_values function for improved tabulation\n\ncount_values(df, 'Sex')\n\n\n\n\n\n  \n    \n      \n      Sex\n      count\n      percentual\n      cumulative_percentual\n    \n  \n  \n    \n      0\n      female\n      314\n      0.352413\n      0.352413\n    \n    \n      1\n      male\n      577\n      0.647587\n      1.000000"
+  }
+]
