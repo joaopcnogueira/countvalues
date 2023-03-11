@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "countvalues"
+  site-url: "https://denisevitoriano.github.io/countvalues"
+  description: "Improved value counts"
+  repo-branch: main
+  repo-url: "https://github.com/denisevitoriano/countvalues"
